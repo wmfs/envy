@@ -1,0 +1,42 @@
+{
+  "name": "@wmfs/envy",
+  "version": "0.0.0-semantically-released",
+  "description": "Configure environment variables by folder. Good for running tests from the command line.",
+  "author": "West Midlands Fire Service",
+  "homepage": "https://github.com/wmfs/envy#readme",
+  "keywords": [
+    "tymly",
+    "package"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wmfs/envy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wmfs/envy/issues"
+  },
+  "dependencies": {
+    "matcher": "1.1.1",
+    "upath": "1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "envy": "node lib/index.js",
+    "lint": "standard",
+    "test": "nyc mocha && standard",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "semantic-release": "semantic-release"
+  },
+  "bin": {
+    "envy": "./bin/envy.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
