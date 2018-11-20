@@ -6,12 +6,13 @@
 ## Install dependencies
 
 ```
+npm install @wmfs/envy --global
+```
+
+## Or
+
+```
 npm install @wmfs/envy
-```
-
-## Make the "envy" command globally accessible
-
-```
 npm link
 ```
 
@@ -35,8 +36,8 @@ See tests.
 * Use an `ENVY_CONFIG_PATH` environment variable to point to a suitable dir.
 * Better error detection/handling
 * Tests
-* Support for a "local-overrides.json" file, that if present should superceed values in value-store.json.
-* Add template support in values "SOME_PATH": "${BLUEPRINT_PATH}/some-blueprint/"... that way a "base" environment variable could be set in value-store.json (or even more powerfully... locally overridden).
+* Support for a `local-overrides.json` file, that if present should superceed values in value-store.json.
+* Add template support in values `"SOME_PATH": "${BLUEPRINT_PATH}/some-blueprint/"`... that way a "base" environment variable could be set in `value-store.json` (or even more powerfully... locally overridden).
 
 # License
 
