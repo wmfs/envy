@@ -1,7 +1,5 @@
 # Envy
-> Configure environment variables by folder. Good for running tests from the command line.
-
-# Usage
+> Maintain environment variables centrally, and set them by current folder. Good for running tests from the command line.
 
 ## Install dependencies
 
@@ -16,7 +14,17 @@ npm install @wmfs/envy
 npm link
 ```
 
-Then from any directory
+
+## Environment variable
+
+Now set the `ENVY_REPO_PATH` to point to a directory containing at least `path-to-value-map.json` and `value-store.json` files.
+
+* This variable, for once, should be set at the system/user level so it's available at any point.
+* By pointing `ENVY_REPO_PATH` to a directory in a separate private repo it will be possible to share environment variable values amongst a team.
+
+## Running
+
+Then from any directory:
 
 ```bash
 envy
