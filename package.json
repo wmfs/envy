@@ -19,7 +19,7 @@
   "dependencies": {
     "chalk": "2.4.1",
     "command-line-args": "5.0.2",
-    "lodash.template": "4.4.0",
+    "lodash.template": "4.18.1",
     "matcher": "1.1.1",
     "upath": "1.1.0"
   },
